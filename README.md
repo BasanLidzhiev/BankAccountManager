@@ -1,2 +1,2 @@
-# bankaccountmanager
+# BankAccountManager
 Банковский счет: перевод, хранение, снятие денег
