@@ -13,7 +13,7 @@ public class AccountController {
 
     }
 
-    public void withDrawal() {
+    public void withDraw() {
 
     }
 }
