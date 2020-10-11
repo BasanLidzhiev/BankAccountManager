@@ -1,6 +1,4 @@
-package ru.lidzhiev.bankaccountmanager.Entity;
-
-import lombok.Data;
+package ru.lidzhiev.bankaccountmanager.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +13,8 @@ public class Account {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private int id;
-    private int amount;
+    private int amountOfMoney;
+
 
     public int getId() {
         return id;
@@ -25,11 +24,11 @@ public class Account {
         this.id = id;
     }
 
-    public int getAmount() {
-        return amount;
+    public int getAmountOfMoney() {
+        return amountOfMoney;
     }
 
-    public void setAmount(int amount) {
-        this.amount = amount;
+    public void setAmountOfMoney(int amount) {
+        this.amountOfMoney = amount;
     }
 }
