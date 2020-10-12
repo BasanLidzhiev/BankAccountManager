@@ -1,19 +1,22 @@
 package ru.lidzhiev.bankaccountmanager.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import lombok.Data;
+
+import javax.persistence.*;
 
 import static javax.persistence.GenerationType.IDENTITY;
 
 @Entity
 @Table(name = "ACCOUNT")
+@Data
 public class Account {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     private int id;
     private int amountOfMoney;
+    private String accountNum;
+    @ManyToOne
+    private User user;
 
 
     public int getId() {
